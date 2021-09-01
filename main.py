@@ -13,3 +13,11 @@ print(df.head(50))
 
 # How to view the last few records
 print(df.tail())
+
+# %%
+# Check type for all columns
+print(df.dtypes)
+
+# Check a particular column
+print(df['salary'].dtype)
+
