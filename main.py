@@ -34,3 +34,13 @@ print(df.groupby(['rank'])[['salary']].mean())
 
 # 4) Calculate mean salary for each professor rank
 print(df.groupby(['rank'], sort=False)[['salary']].mean())
+
+# %%
+# 5) Subset the rows in which salary > $120K
+df_sub = df[df['salary'] > 120000]
+print(df_sub)
+
+# 6) Select only those rows that contain female professors
+df_f = df[df['sex'] == 'Female']
+print(df_f)
+
