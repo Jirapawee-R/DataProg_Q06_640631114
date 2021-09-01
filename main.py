@@ -51,3 +51,7 @@ print(df['salary'])
 # 8) Select column rank and column Salary
 print(df[['rank', 'salary']])
 
+# %%
+# 9) Select rows by their position
+print(df[10:20])
+
