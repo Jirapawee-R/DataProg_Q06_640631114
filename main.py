@@ -72,3 +72,4 @@ print(df_sort.head())
 # 13) Sort the data using 2 or more column
 df_sorted =  df.sort_values(by=['service', 'salary'], ascending= [True, False])
 print(df_sorted.head(10))
+
