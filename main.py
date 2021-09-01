@@ -55,3 +55,6 @@ print(df[['rank', 'salary']])
 # 9) Select rows by their position
 print(df[10:20])
 
+# %%
+# 10) Select rows by their labels:
+print(df_sub.loc[10:20, ['rank', 'sex', 'salary']])
