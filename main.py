@@ -67,3 +67,8 @@ print(df_sub.iloc[10:20, [0,3,4,5]])
 # 12) Create a new dataframe from orinal one sorted by service
 df_sort = df.sort_values(by='service')
 print(df_sort.head())
+
+# %%
+# 13) Sort the data using 2 or more column
+df_sorted =  df.sort_values(by=['service', 'salary'], ascending= [True, False])
+print(df_sorted.head(10))
