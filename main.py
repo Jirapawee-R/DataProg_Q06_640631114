@@ -44,3 +44,10 @@ print(df_sub)
 df_f = df[df['sex'] == 'Female']
 print(df_f)
 
+# %%
+# 7) Select column salary
+print(df['salary'])
+
+# 8) Select column rank and column Salary
+print(df[['rank', 'salary']])
+
