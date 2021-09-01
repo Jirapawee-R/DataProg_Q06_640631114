@@ -62,3 +62,8 @@ print(df_sub.loc[10:20, ['rank', 'sex', 'salary']])
 # %%
 # 11) Select range of rows using position use method iloc
 print(df_sub.iloc[10:20, [0,3,4,5]])
+
+# %%
+# 12) Create a new dataframe from orinal one sorted by service
+df_sort = df.sort_values(by='service')
+print(df_sort.head())
