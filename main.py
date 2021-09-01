@@ -21,3 +21,16 @@ print(df.dtypes)
 # Check a particular column
 print(df['salary'].dtype)
 
+# %%
+# 1) Group data using rank
+df_rank = df.groupby(['rank'])
+print(df_rank)
+
+# 2) Calculate mean for each numeric column per each group
+print(df_rank.mean())
+
+# 3) Calculate mean salary for each professor rank
+print(df.groupby(['rank'])[['salary']].mean())
+
+# 4) Calculate mean salary for each professor rank
+print(df.groupby(['rank'], sort=False)[['salary']].mean())
